@@ -20,7 +20,7 @@ Go现在支持`mod`管理项目的依赖包，非常好用，为了启用`mod`�
     replace (
       github.com/gohouse/goroom => /path/to/go/src/github.com/gohouse/goroom
       by => ../by
-    )    
+    )
 
 ## GOPROXY
 我们在开发过程中，经常会用到Go语言官方包，例如golang.org/x/...，国内网络环境无法访问。
@@ -41,7 +41,7 @@ Go镜像库托管在github.com/golang/上，可以从github下载，然后再移
     # go get
 	https://github.com/hyper0x/go_command_tutorial/blob/master/0.3.md
 
-    实质上是提供一个web接口，响应go get的请求，做了一个重定向。 具体做法是在响应的html头中加入下面格式的元数据：    
+    实质上是提供一个web接口，响应go get的请求，做了一个重定向。 具体做法是在响应的html头中加入下面格式的元数据：
         <meta name="go-import" content="import-prefix vcs repo-root">
 
 ## 实用工具
